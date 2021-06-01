@@ -6,6 +6,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP Conn_Coaxial
+D coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)
+K BNC SMA SMB SMC coaxial connector CINCH RCA
+F  ~
+$ENDCMP
+#
 $CMP LT1764AEQ#PBF
 D LDO Voltage Regulators Fast Transient 3A LDO
 K REGULATOR POSITIVE POWER LDO adjustable
