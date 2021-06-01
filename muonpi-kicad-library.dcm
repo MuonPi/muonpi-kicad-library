@@ -27,27 +27,9 @@ K SIM card UICC
 F  ~
 $ENDCMP
 #
-$CMP USB_B_Micro
-D USB Micro Type B connector
-K connector USB micro
-F ~
-$ENDCMP
-#
 $CMP USB_B_Micro_SMD
 D USB Micro Type B connector
 K connector USB micro
-F ~
-$ENDCMP
-#
-$CMP USB_B_Mini
-D USB Mini Type B connector
-K connector USB mini
-F ~
-$ENDCMP
-#
-$CMP USB_B_Mini_copy
-D USB Mini Type B connector
-K connector USB mini
 F ~
 $ENDCMP
 #
