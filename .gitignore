@@ -27,3 +27,6 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+muonpi-kicad-library.zip
+muonpi-kicad-library_info.txt
