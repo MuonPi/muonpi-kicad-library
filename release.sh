@@ -11,16 +11,16 @@ lib_files="./symbols ./footprints ./3dmodels ./resources ./metadata.json"
 # rewrite in python
 
 # Pack
-zip -r ./${name}.zip ${lib_files}
+zip -q -r ./${name}.zip ${lib_files}
 
 # Compute checksum
-echo -n '"download_sha256": ' > ./${name}_info.txt
-sha256sum ./${name}.zip | sed -E 's/\s(.*)//;t;d' >> ./${name}_info.txt
+echo "          \"download_sha256\": \"$(sha256sum ./${name}.zip | sed -E 's/\s(.*)//;t;d')\","
+
 
 # Compute download size
-echo -n '"download_size": ' >> ./${name}_info.txt
-du -csb ./${name}.zip | grep total | sed 's/ *\stotal* *\(.*\)/\1/' >> ./${name}_info.txt
+echo "          \"download_size\": $(du -csb ./${name}.zip | grep total | sed 's/ *\stotal* *\(.*\)/\1/'),"
+
 
 # Compute install size
-echo -n '"install_size": ' >> ./${name}_info.txt
-du -csb ${lib_files} | grep total | sed 's/ *\stotal* *\(.*\)/\1/' >> ./${name}_info.txt
+echo "          \"install_size\": $(du -csb ${lib_files} | grep total | sed 's/ *\stotal* *\(.*\)/\1/')"
+
