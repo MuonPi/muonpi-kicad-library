@@ -1,0 +1,30 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "muonpi library",
+    "description": "Kicad symbol and footprint library for the muonpi board.",
+    "description_full": "This package contains footprints and symbols used in the muonpi project.",
+    "identifier": "com.github.MuonPi.muonpi-kicad-library",
+    "type": "library",
+    "author": {
+        "name": "MuonPi",
+        "contact": {
+            "email": "developer@muonpi.org"
+        }
+    },
+    "license": "CC-BY-SA-4.0",
+    "resources": {
+        "github": "https://github.com/MuonPi/muonpi-kicad-library"
+    },
+    "tags": [
+        "footprint",
+        "library",
+        "detector"
+    ],
+    "versions": [
+        {
+            "version": "0.1",
+            "status": "dev",
+            "kicad_version": "6.0"
+        }
+    ]
+}
